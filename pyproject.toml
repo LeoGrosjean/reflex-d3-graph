@@ -1,0 +1,40 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-d3-graph"
+version = "0.0.1"
+description = "Reflex custom component to render graph"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [{ name = "Léopold Grosjean", email = "leo.grosjean@gmail.com" }]
+keywords = [
+    "reflex",
+    "reflex-custom-components",
+    "graph"
+]
+
+dependencies = [
+    "reflex>=0.6.0"
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+]
+
+[project.urls]
+Homepage = "https://github.com/LeoGrosjean/reflex-d3-graph"
+homepage = "https://github.com/LeoGrosjean/reflex-d3-graph"
+source = "https://github.com/LeoGrosjean/reflex-d3-graph"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+
+[tool.setuptools.packages.find]
+where = ["custom_components"]
